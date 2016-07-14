@@ -1,11 +1,42 @@
+/***************** General ********************/
+body {
+    background: #3a3a3a;
+}
+
 .container,
-.reader{
+.staging-area{
     display: flex;
     flex-direction: column;
     align-content: center;
 }
+.container{
+    color: aliceblue;
+    height: 100vh;
+}
 
-.read {
+/************ Staging area styles *************/
+
+.staging-area {
+    margin: auto 0;
+}
+
+.input {
+    flex-basis: 400px;
+    width: 100%;
+    background-color: #3a3a3a;
+    color: aliceblue;
+}
+
+.speed{
+    text-align: center;
+    color: #3a3a3a;
+    font-weight: 800;
+}
+
+/****************** Reader styles *******************/
+
+.reading-area {
+    margin: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     font-size: 150px;
@@ -13,12 +44,9 @@
     text-align: center;
 }
 
-.input {
-    width: 100%;
-    background-color: #3a3a3a;
-    color: aliceblue;
-}
-
-body {
-    background: #3a3a3a;
+.reset {
+    display: none;
+    font-size: 4em;
+    height: 100px;
+    margin: auto 0;
 }

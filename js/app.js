@@ -1,28 +1,37 @@
 'use strict';
 $(".start").click(function(){
+    // store the input as an array
     var star = $('.input')[0].value;
-    star = star.replace(/\n|\W/m, " ");
+    star = star.replace(/\s/ig, " ");
+    star = star.split(" ");
+
+    // Words per minute
     var wordsPerMinute = $('.speed')[0].value;;
     var speed = 60000/wordsPerMinute;
-    star = star.split(" ");
-    setInterval(function(){
-        $('.read').html(star.shift());
+
+    // let there be words
+    var intervalHandle = setInterval(function(){
+        $('.reading-area').html(star.shift());
+        if(star.length === 0){
+            // clear the interval when the array is empty
+            clearInterval(intervalHandle);
+            $(".reset").css("display", "inline-block");
+        }
     }, speed);
-    $(".input").css("display","none");
-    console.log(star);
+    $(".staging-area").css("display","none");
 });
-$('.restart').click(function(){
-    $(".input").css("display", "inline-block");
+
+$('.reset').click(function(){
+    $(".staging-area").css("display", "flex");
+    $(".reset").css("display", "none");
+    $(".reading-area").html("");
 });
 
 
 /*
-so we have 60000 milliseconds 
-we want 300 words every 60000 msc
-so every word should take propotionately
-60000/300
 
-
+when the array is empty
+we should display the reset button
 
  */
 

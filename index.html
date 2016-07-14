@@ -8,14 +8,15 @@
 </head>
 <body>
 <div class="container">
-	<div class="reader">
+	<div class="staging-area">
+		<label>What do you want to read:</label>
 		<textarea class="input col-md-12"></textarea>
-		<input class="speed" type="text" placeholder="how many words per minute?">
+		<label for="speed">How many words per minute:</label>
+		<input id="speed" class="speed" value="300" type="text">
 		<a class="start btn btn-success">start</a>
-		<a class="restart btn btn-success">restart</a>
-		<div class="read col-md-12"></div>
 	</div>
-	
+		<div class="reading-area col-md-12"></div>	
+		<a class="reset btn btn-danger">Reset</a>
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
