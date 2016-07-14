@@ -1,0 +1,24 @@
+.container,
+.reader{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.read {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    font-size: 150px;
+    color : aliceblue;
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    background-color: #3a3a3a;
+    color: aliceblue;
+}
+
+body {
+    background: #3a3a3a;
+}
