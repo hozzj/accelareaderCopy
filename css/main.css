@@ -12,6 +12,16 @@ body {
 .container{
     color: aliceblue;
     height: 100vh;
+    max-width: 800px;
+}
+
+label {
+    text-align: center;
+}
+
+footer {
+    background: black;
+    text-align: center;
 }
 
 /************ Staging area styles *************/
@@ -20,11 +30,26 @@ body {
     margin: auto 0;
 }
 
+.template{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.lang {
+    font-weight: 600;
+    flex-basis: 150px;
+    height: 35px;
+}
+
 .input {
+    font-family: initial;
     flex-basis: 400px;
     width: 100%;
-    background-color: #3a3a3a;
-    color: aliceblue;
+    background-color: #ccc;
+    color: #3a3a3a;
+    border-width: 0;
+    padding: 20px;
 }
 
 .speed{
@@ -42,6 +67,8 @@ body {
     font-size: 150px;
     color : aliceblue;
     text-align: center;
+    padding-top: 140px;
+    flex-grow: 2;
 }
 
 .reset {

@@ -9,14 +9,21 @@
 <body>
 <div class="container">
 	<div class="staging-area">
-		<label>What do you want to read:</label>
-		<textarea class="input col-md-12"></textarea>
+		<label>Try a template</label>
+		<div class="template">
+			<a class="ar lang btn btn-default">عربي</a>
+			<a class="en lang btn btn-default">English</a>
+		</div>
+		<label for="input">What do you want to read:</label>
+		<textarea id="input" class="input col-md-12"></textarea>
 		<label for="speed">How many words per minute:</label>
-		<input id="speed" class="speed" value="300" type="text">
+		<input id="speed" class="speed" value="250" type="text">
 		<a class="start btn btn-success">start</a>
 	</div>
 		<div class="reading-area col-md-12"></div>	
 		<a class="reset btn btn-danger">Reset</a>
+		<footer>Inspired by <a target="_blank" href="http://accelareader.com">Accelareader by Iris</a> 
+		implemented by me <a target="_blank" href="https://fb.com/hozzj">Contact me on FB</a></footer>
 </div>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
