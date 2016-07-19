@@ -31,6 +31,7 @@ footer {
 }
 
 .template{
+    height: 50px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -48,8 +49,9 @@ footer {
     width: 100%;
     background-color: #ccc;
     color: #3a3a3a;
-    border-width: 0;
+    border: white solid 2px;
     padding: 20px;
+    border-radius: 4px;
 }
 
 .speed{
@@ -58,13 +60,18 @@ footer {
     font-weight: 800;
 }
 
+.start {
+    font-size: 4em;
+}
+
 /****************** Reader styles *******************/
 
 .reading-area {
+    display: none;
     margin: auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: initial;
     width: 100%;
-    font-size: 150px;
+    font-size: 7em;
     color : aliceblue;
     text-align: center;
     padding-top: 140px;

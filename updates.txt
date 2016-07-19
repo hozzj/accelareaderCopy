@@ -1,3 +1,10 @@
 v 0.2
 added labels
 improved reset
+
+v 0.3
+removed trailing dash and space at the line break
+decreased the speed at big words
+    more than or equal to 8 chars
+added a control for light or dark mode
+a bigger start button =D
